@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <fieldset style="margin-right: 700px;">
+            <center><h1>Registration Form</h1></center>
+            <br>
+            <style type="text/css">
+                label{
+                    width: 170px;
+                    display: inline-block;
+                }
+            </style>
+            <table border="0" cellspacing="8" width="100%">
+                <form action="submit.html" method="get">
+                <tr>
+                    <td><label for="name">First Name :</label>
+                    <input type="name" name="name" id="name" placeholder="Enter First Name" ></td>
+                </tr>
+                <tr>
+                    <td><label for="lname" >Last Name :</label>
+                    <input type="lname" name="lname" id="lname" placeholder="Enter Last Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="Email" >Email :</label>
+                    <input type="Email" name="Email" id="Email" placeholder="Enter Email Address"></td>
+                </tr>
+                <tr>
+                    <td><label for="password" >Password :</label>
+                    <input type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender :</label>
+                    <input id="male" name="gender" value="male" type="radio">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="Others" name="gender" value="Others">
+                    <label for="Others">Others</label></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age :</label>
+                    <input type="number" id="age" na="age"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Preferences :</label>
+                    <input type="checkbox" id="Acrylic Painting" name="checkbox" value="Acrylic Painting">
+                    <label for="Acrylic Painting">Acrylic Painting</label>
+                    <input type="checkbox" id="Oil Painting" name="checkbox" value="Oil Painting">
+                    <label for="Oil Painting">Oil Painting</label>
+                    <input type="checkbox" id="Water color Painting" name="checkbox" value="Water color Painting">
+                    <label for="Water color Painting">Water color Painting</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="occupation">Occupation :</label>
+                        <select name="occupation" id="occupation">
+                            <option value="occupation">student</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="bio" style=" vertical-align: top;">Bio :</label>
+                    <textarea name="bio" id="bio" rows="7" cols="40">
+Share few lines about
+yourself...
+                    </textarea></td>
+                </tr>
+                <tr align="center">
+                    <td><input type="Reset">
+                    <button>Submit</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

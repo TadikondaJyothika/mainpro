@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./images/tgs.jpg" width="100%" alt="">
+    <br>
+    <form action="submit.html" method="get">
+    <fieldset>
+        <legend>
+            <span style="background-color: lightskyblue; color:white; padding:2px 6px; border-radius:4px;">
+            Application Details
+            </span>
+    </legend>
+    <div style="display: flex; gap:20px">
+ <label for="name">Name<span style="color:red;">*</span></label>
+ <input type="text" id="name" name="name" required><br><br>
+ <label for="father">Father's/Guardan's Name<span style="color:red;">*</span></label>
+ <input type="text" id="father" name="father" required>
+ </div>
+ <br><br>
+ <div style="display: flex; gap:20px">
+ <label for="date">Date of birth<span style="color:red;">*</span></label>
+ <input type="date" id="date" required> <br>
+ <label >Gender<span style="color:red;">*</span></label>
+ <input type="radio"id="male" name="gender" value="male">
+ <label for="male">Male</label>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label>
+ </div>
+ <br><br>
+ <div style="display: flex; gap:20px">
+ <label for="number">Aadhaar No:</label>
+ <input type="text"id="number"name="number" maxlength="12">
+ <label for="number">WhatsApp No<span style="color: red;">*</span></label>
+ <input type="tel"id="number"name="number" required>
+ </div> 
+ <br><br>
+ <div style="display: flex; gap:20px">
+ <label for="file">Photo<span style="color: red;">*</span></label>
+ <input type="file"id="file"name="file" required>
+ </div>
+ </fieldset>
+ <br><br>
+ <fieldset>
+ <legend>
+ <span style="background-color: lightskyblue; color: white; padding:2px
+6px; border-radius:4px;">Residential Address Details</span></legend>
+ <div style="display: flex; gap:20px">
+ <label for="address">Applicant's Address<span style="color:red;">*</span></label>
+ <textarea type="address"id="address"name="address"></textarea>
+ <label for="text">District<span style="color:red;">*</span></label>
+ <select id="District" name="District" required>
+ <option value="">-- Select --</option>
+ </select>
+ </div>
+ <br><br>
+ <div style="display: flex; gap:20px">
+ <label for="text">Mandal<span style="color:red;">*</span></label>
+ <select id="Mandal" name="Mandal" required>
+ <option value="">-- Select --</option>
+ </select>
+ <label for="text">Village<span style="color:red;">*</span></label>
+ <select id="Village" name="Village" required>
+ <option value="">-- Select --</option>
+ </select>
+ </div><br><br>
+ <label for="Pincode">Pincode<span style="color:red;">*</span></label>
+ <input type="text"id="Pincode"name="Pincode">
+ </fieldset>
+ <br><br>
+ <fieldset>
+ <legend>
+ <span style="background-color: lightskyblue; color: white; padding:2px
+6px; border-radius:4px;">Pass Type Details</span></legend>
+ <label for="passType">City <span style="color:red;">*</span></label>
+<select id="city" name="City" required>
+ <option value="">-- Select --</option>
+ </select>
+ <br><br>
+ <label for="passType">Pass Type <span style="color:red;">*</span></label>
+<select id="passType" name="passType" required>
+ <option value="">-- Select --</option>
+</select>
+ </fieldset>
+ <br><br>
+ <fieldset>
+ <legend>
+ <span style="background-color: lightskyblue; color: white; padding:2px
+6px; border-radius:4px;">Mode of Payment & Pass Collection</span></legend>
+ <label for="passType">Payment Mode<span
+style="color:red;">*</span></label>
+<select id="passType" name="passType" required>
+ <option value="">-- Select Payment Mode--</option>
+</select><br><br>
+ <label for="passType">Pass Delivery Mode<span
+style="color:red;">*</span></label>
+<select id="passType" name="passType" required>
+ <option value="">-- Select Pass Delivery Mode--</option>
+</select><br><br>
+ <label for="passType">Center at Which you want to Collect pass<span
+style="color:red;">*</span></label>
+<select id="passType" name="passType" required>
+ <option value="">-- Select --</option>
+</select>
+    </fieldset>
+    </form>
+    <br>
+    <center><img src="./images/captcha.jpg" width="150"  alt="">
+    <br>
+    <br>
+    <input type="text" value="Enter Captcha">
+    <br>
+    <br>
+    <input type="submit" value="Submit">  
+    </center>  
+</body>
+</html>
